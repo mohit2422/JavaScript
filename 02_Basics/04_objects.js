@@ -31,9 +31,21 @@ const obj3 = {...obj1, ...obj2};
 // console.log(obj3);
 
 // ********* Accessing keys, values and entries of different objects ********
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser)); 
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser)); 
 
 // ********* checking object have certain properties or not ********
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+// *********** Destructuring Object Concept *************
+const course = {
+    coursename : "js in hindi",
+    price : "999",
+    courseInstructor : "Hitesh"
+}
+
+// course.courseInstructor
+const {courseInstructor} = course
+const {courseInstructor: intruc} = course
+console.log(intruc);
